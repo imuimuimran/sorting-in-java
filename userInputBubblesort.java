@@ -24,6 +24,8 @@ public class userInputBubblesort {
         // bubble sort algorithm
         for(int i = 0; i < arr.length - 1; i++) {
             for(int j = 0; j < arr.length - i - 1; j++) {
+                
+                // If we write: if(arr[j] < arr[j + 1]), then the output will be as descending order.
                 if(arr[j] > arr[j + 1]) {
                     //swap operation
                     int temp = arr[j];

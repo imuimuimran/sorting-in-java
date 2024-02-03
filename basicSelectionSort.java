@@ -1,4 +1,4 @@
-public class basicBubbleSort {
+public class basicSelectionSort {
 
     public static void printArray(int arr[]) {
         for(int i = 0; i < arr.length; i++) {
@@ -9,18 +9,19 @@ public class basicBubbleSort {
     public static void main(String[] args) {
         int arr[] = {7,8,3,1,2};
 
-        // bubble sort algorithm
+        // selection sort algorithm
         for(int i = 0; i < arr.length - 1; i++) {
-            for(int j = 0; j < arr.length - i - 1; j++) {
+            int smallestArray = i;
+            for(int j = i + 1; j < arr.length; j++) {
                 
-                // If we write: if(arr[j] < arr[j + 1]), then the output will be as descending order.
-                if(arr[j] > arr[j + 1]) {
+                if(arr[smallestArray] > arr[j]) {
                     //swap operation
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+                    smallestArray = j;
                 }
             }
+            int temp = arr[smallestArray];
+            arr[smallestArray] = arr[i];
+            arr[i] = temp;
         }
 
         printArray(arr);
