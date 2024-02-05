@@ -4,6 +4,9 @@ This repository is created for practicing and solving sorting algorithm problems
 ### Basic Syntax of Bubble Sort
 <p>=> This program can sort out in ascending order with bubble sort.</p>
 
+### Basic Syntax of Insertion Sort
+<p>=> This program can sort out in ascending order with Insertion sort.</p>
+
 ### Basic Syntax of Secletion Sort
 <p>=> This program can sort out in ascending order with selection sort.</p>
 
